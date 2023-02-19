@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Olympic Rings – Easy</title>
+
+<style>
+.ring {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    border-style: solid;
+    border-width: 10px;
+}
+
+.blue {
+    border-color: #0180C3;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.yellow {
+    border-color: #FEB131;
+    left: 70px;
+    top: 60px;
+}
+
+.yellow1 {
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+.yellow2 {
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+
+.black {
+    border-color: black;
+    left: 140px;
+    top: 0px;
+}
+
+.black1 {
+    z-index: -2;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.black2 {
+    z-index: 0;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.green {
+    border-color: #059341;
+    left: 210px;
+    top: 60px;
+}
+
+/* define the first part of the green ring css style */
+.green1 {
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+.green2 {
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+
+.red {
+    border-color: #FF0000;
+    left: 280px;
+    top: 0px;
+}
+
+.red1 {
+    z-index: -2;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.red2 {
+    z-index: 0;
+    clip-path: polygon(100% 100%, 100% 0, 0 100%);
+}
+
+.aqua {
+    border-color: #a5f2f3;
+    left: 140px;
+    top: 125px;
+}
+
+.aqua1 {
+    z-index : 1;
+    clip-path: polygon(50% 50%, 0% 0%, 0% 50%);
+}
+
+.aqua2 {
+    z-index: -2;
+    clip-path: polygon(50% 50%, 50% 0%, 0% 0%);
+}
+
+.aqua3 {
+    z-index: 1;
+    clip-path: polygon(100% 100%, 100% 0%, 50% 50%, 0% 50%, 0% 100%);
+}
+
+.aqua4 {
+    clip-path: polygon(100% 0%, 50% 0%, 50% 50%);
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="ring blue"></div>
+    
+    <div class="ring yellow yellow1"></div>
+    <div class="ring yellow yellow2"></div>
+    
+    <div class="ring black black1"></div>
+    <div class="ring black black2"></div>
+    
+    <div class="ring green green1"></div>
+    <div class="ring green green2"></div>
+    
+    <div class="ring red red1"></div>
+    <div class="ring red red2"></div>
+
+    <div class="ring aqua aqua1"></div>
+    <div class="ring aqua aqua2"></div>
+    <div class="ring aqua aqua3"></div>
+    <div class="ring aqua aqua4"></div>
+</div>
+
+</body>
+</html>
